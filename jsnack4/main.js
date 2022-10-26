@@ -7,15 +7,21 @@ const inviteList = ["Paolo", "Marco", "Simone", "Davide", "Nicola",];
 
 const invited = prompt("Inserisci il tuo nome");
 
+let user = false;
+
 for (let i = 0; i < inviteList.length; i++) {
     const element = inviteList[i];
-
-    if (invited === element) {
-        alert("Benvenuto");
-        break
-    } else {
-        alert("Non sei sulla lista");
-        break
-    }
     
+    if (invited === element) {
+        user = true;
+        break;
+    } 
+    
+}
+if (user) {
+    alert("Benvenuto");
+
+} else {
+    alert("Non sei sulla lista");
+
 }
