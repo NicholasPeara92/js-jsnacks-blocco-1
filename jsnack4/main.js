@@ -5,20 +5,20 @@
 const inviteList = ["Paolo", "Marco", "Simone", "Davide", "Nicola",];
 
 
-const invited = prompt("Inserisci il tuo nome");
+const user = prompt("Inserisci il tuo nome");
 
-let user = false;
+let invited = false;
 
 for (let i = 0; i < inviteList.length; i++) {
     const element = inviteList[i];
     
-    if (invited === element) {
-        user = true;
+    if (user === element) {
+        invited = true;
         break;
     } 
     
 }
-if (user) {
+if (invited) {
     alert("Benvenuto");
 
 } else {
